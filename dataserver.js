@@ -25,8 +25,8 @@ endpoint.get('/threads', (request, response)=>{
 		const output = {
 			success: false
 		}
-		const query = ``;
 		const threadID = request.query.id;
+		const query = ``;
 		db.query(query, (error, results, fields)=>{
 			if(error){
 				output.error = error;
@@ -44,8 +44,8 @@ endpoint.post('/conversations', (request, response)=>{
 		const output = {
 			success: false
 		}
-		const query = ``; //write your query here
 		const convoID = request.body.id;
+		const query = ``; //write your query here
 		db.query(query, (error, results, fields)=>{
 			if(error){
 				output.error = error;
