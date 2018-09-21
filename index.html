@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery3.1.0.js" defer></script>
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+<div id="userList">
+	
+</div>
+<div id="conversations">
+	
+</div>
+<div id="modalShadow">
+	<div id="modalBody">
+		<div class="closeButton"></div>
+		<div id="modalText"></div>
+	</div>
+</div>
+<div id="templates">
+	<div id="user-template" class="insetBottomBorder">
+		<div class="username">{username}</div>
+		<div class="messages">{messageCount}</div>
+		<div class="lastMessage">{lastMessage}</div>
+	</div>
+	<div id="message-template" class="insetBottomBorder">
+		<div class="messageMetadata">
+			<div class="username">From: {usernameFrom}</div>
+			<div class="date">{occurred}</div>
+		</div>
+		<div class="messageText">{message}</div>
+	</div>
+	<div id="thread-template" class="insetBottomBorder">
+		<div class="username">From: {sender}</div>
+		<div class="messageText">{message}</div>
+		<div class="date">{occurred}</div>
+	</div>
+</div>
+</body>
+</html>

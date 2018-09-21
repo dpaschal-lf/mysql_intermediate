@@ -1,0 +1,165 @@
+html{
+	font-size: 2vmin;
+}
+body{
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	font-size: 0;
+}
+#templates > * {
+	display: none;
+}
+#userList, #conversations{
+	display: inline-block;
+	height: 100%;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+#userList{
+	width: 30%;
+	border-right: 2px solid black;
+}
+#conversations{
+	width: 70%;
+}
+#userList .user{
+	cursor: pointer;
+}
+#userList .user:nth-child(even){
+	background-color: lightgrey;
+}
+#userList .user:hover{
+	background-color: black;
+	color: white;
+}
+#userList .user > *{
+	font-size: 1rem;
+	box-sizing: border-box;
+	display: table-cell;
+}
+#userList .username{
+	width: 60%;
+	border-right: 1px solid black;
+}
+#userList .messages{
+	width: 10%;
+	border-right: 1px solid black;
+	text-align: center;
+}
+#userList .lastMessage{
+	width: 30%;
+	text-align: center;
+}
+.insetBottomBorder{
+	position: relative;
+}
+.insetBottomBorder::after{
+	content: '';
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	bottom: 0;
+	border-bottom: 1px solid black;	
+}
+.message{
+	font-size: 1rem;
+}
+.message:nth-child(even){
+	background-color: lightgrey;
+}
+.message:hover{
+	background-color: black;
+	color: white;
+}
+.message .messageMetadata, .message > .messageText{
+	display: table-cell;
+	box-sizing: border-box;
+}
+.message .messageMetadata{
+	width: 25%;
+	border-right: 1px solid black;
+}
+.messageMetadata > *{
+	width: 100%;
+	position: relative;
+}
+.message .messageText{
+	width: 75%;
+}
+.threadMessage > *{
+	display: table-cell;
+	box-sizing: border-box;
+}
+.threadMessage .username{
+	width: 20%;
+}
+.threadMessage .messageText{
+	width: 70%;
+}
+.threadMessage .date{
+	width: 10%;
+}
+#modalShadow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.4);
+	display: none;
+}
+#modalBody{
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	width: 50%;
+	height: 50%;
+	background-color: white;
+	font-size: 1rem;
+}
+#modalText{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#modalBody .closeButton{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black;
+	width: 5%;
+	height: 5%;
+}
+#modalBody .closeButton::after{
+	content: 'X';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 1rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+.scrollY{
+	overflow-y: scroll;
+}
+
+
+
+
+/*			<div id="modalShadow">
+	<div id="modalBody">
+		<div id="modalText"></div>
+	</div>
+</div>
+*/
+
+
+
+
