@@ -21,7 +21,7 @@ endpoint.use(function(req, res, next) {
 });
 
 endpoint.get('/threads', (request, response)=>{
-	db.connect( ()=>{
+	db.connect(()=>{
 		const output = {
 			success: false
 		}
@@ -33,26 +33,33 @@ endpoint.get('/threads', (request, response)=>{
 				response.send( JSON.stringify(output));
 				return;
 			}
-			output.data = results;
+			output.threadID = threadID;
+			output.started = results[0].occurred;
+			output.lastMessage = results[results.length-1].occurred;
+			output.messages = results;
+			output.success = true;
 			response.send( JSON.stringify(output));
 		});
 	});
 });
 
 endpoint.post('/conversations', (request, response)=>{
-	db.connect( ()=>{
+	db.connect(()=>{
 		const output = {
 			success: false
 		}
-		const convoID = request.body.id;
-		const query = ``; //write your query here
+		const userID = request.body.id;
+		const query = ``;
+		console.log("query = ",query);
 		db.query(query, (error, results, fields)=>{
 			if(error){
 				output.error = error;
 				response.send( JSON.stringify(output));
 				return;
 			}
-			output.data = results;
+			output.messagesFor = results[0].sender;
+			output.messages = results;
+			output.success = true;
 			response.send( JSON.stringify(output));
 		});
 	});
