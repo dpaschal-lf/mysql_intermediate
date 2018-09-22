@@ -71,6 +71,7 @@ body{
 .message:hover{
 	background-color: black;
 	color: white;
+	cursor: pointer;
 }
 .message .messageMetadata, .message > .messageText{
 	display: table-cell;
@@ -131,6 +132,7 @@ body{
 	background-color: black;
 	width: 5%;
 	height: 5%;
+	cursor: pointer;
 }
 #modalBody .closeButton::after{
 	content: 'X';
