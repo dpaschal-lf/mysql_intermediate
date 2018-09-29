@@ -1,1 +1,19 @@
-{"success":true,"users":[{"id":2,"username":"dodger","messageCount":3,"lastMessage":"2018-03-04 12:24:23"},{"id":4,"username":"janedoe","messageCount":1,"lastMessage":"2018-03-04 12:24:23"},{"id":6,"username":"anotherUser","messageCount":4,"lastMessage":"2018-03-04 12:24:23"}]}
+{
+	"success": true,
+	"users": [{
+		"id": 2,
+		"username": "dodger",
+		"messageCount": 3,
+		"lastMessage": "2018-03-04 12:24:23"
+	}, {
+		"id": 4,
+		"username": "janedoe",
+		"messageCount": 1,
+		"lastMessage": "2018-03-04 12:24:23"
+	}, {
+		"id": 6,
+		"username": "anotherUser",
+		"messageCount": 4,
+		"lastMessage": "2018-03-04 12:24:23"
+	}]
+}
