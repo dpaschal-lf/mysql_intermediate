@@ -21,7 +21,7 @@ function loadUserData(){
 function loadConversationData( userID ){
 	const options = {
 		url: 'dummydata-comms.json',
-		method: 'get',
+		method: 'post',
 		dataType: 'json',
 		data: {
 			id: userID
@@ -33,7 +33,7 @@ function loadConversationData( userID ){
 function loadThreadData( threadID ){
 	const options = {
 		url: 'dummydata-threads.json',
-		method: 'get',
+		method: 'post',
 		dataType: 'json',
 		data: {
 			id: threadID
