@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+create DATABASE chatThread2
 --
 -- Table structure for table `messages`
 --
