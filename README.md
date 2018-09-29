@@ -15,6 +15,7 @@ https://www.youtube.com/watch?v=F9bBhN3Mlps
 - make sure your mamp is running
 - open up the page via your mamp server
 - test current layout with dummy data to see expected appearance
+- configure your mysql_connect.php file by copying your mysql_connect.php.config file and filling in the appropriate info
 - change loadUserData (in script.js) function to point at php endpoint userEndpoint.php
 	- make sure to put in the full address as it may not match your server
 - add query to userEndpoint.php
@@ -25,6 +26,7 @@ https://www.youtube.com/watch?v=F9bBhN3Mlps
 - make sure to install the necessary components via npm install
 	- express
 	- mysql
+- configure your mysql_credentials.js file by copying your mysql_credentials.js.config file and filling in the appropriate info
 - change loadConversationData (in script.js) to point at the node endpoint.  This endpoint uses the get method and will likely be on your localhost:3001/conversations
 - add mysql to your dataserver.js for the /conversations method to mimic the data in dummydata-comms.json
 - start your dataserver.js with node
